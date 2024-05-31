@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Data Analysis Application Report}
+\author{Πέτρος Βεζυργιανόπουλος, Άγγελος Τσάνη}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report documents the functionalities of the Data Analysis Application, designed for data mining and analysis. The application allows users to upload data, perform two-dimensional visualizations, conduct exploratory data analysis, and compare classification and clustering algorithms.
+
+\section{Data Upload}
+Users can upload CSV or Excel files. The data is then displayed in a table for initial inspection.
+
+\section{Two-Dimensional Visualization}
+The application provides two methods for 2D visualization:
+\begin{itemize}
+    \item Principal Component Analysis (PCA)
+    \item t-Distributed Stochastic Neighbor Embedding (t-SNE)
+\end{itemize}
+These methods reduce the dimensionality of the data to two dimensions for visualization purposes.
+
+\section{Exploratory Data Analysis (EDA)}
+Users can perform EDA using:
+\begin{itemize}
+    \item Histograms
+    \item Boxplots
+\end{itemize}
+These plots help in understanding the distribution and variance of numerical features in the dataset.
+
+\section{Classification Comparison}
+The application compares the performance of two classification algorithms:
+\begin{itemize}
+    \item Logistic Regression
+    \item Random Forest
+\end{itemize}
+Users can adjust the regularization parameter for Logistic Regression and the number of estimators for Random Forest. The accuracy of each classifier is displayed after running the comparison.
+
+\section{Clustering Comparison}
+The application supports clustering with:
+\begin{itemize}
+    \item K-Means
+    \item Hierarchical Clustering
+\end{itemize}
+Users can specify the number of clusters for each algorithm. The cluster labels are displayed for both methods after running the comparison.
+
+\section{Implementation Details}
+The application is implemented using:
+\begin{itemize}
+    \item \textbf{Streamlit} for the web interface
+    \item \textbf{Pandas} for data manipulation
+    \item \textbf{Plotly} for visualizations
+    \item \textbf{Scikit-learn} for machine learning algorithms
+\end{itemize}
+
+\section{Team}
+\begin{itemize}
+    \item Πέτρος Βεζυργιανόπουλος
+    \item Άγγελος Τσάνη
+\end{itemize}
+
+\section{Tasks Executed}
+\begin{itemize}
+    \item 2D Visualization
+    \item Docker setup
+    \item Github version control
+    \item Machine learning algorithms comparison
+    \item Software release life cycle
+\end{itemize}
+
+\section{Conclusion}
+This application provides a comprehensive tool for data analysis, enabling users to visualize, analyze, and compare data using various methods. The integration of different machine learning algorithms and visualization techniques offers a robust platform for exploratory data analysis and model evaluation.
+
+\end{document}
